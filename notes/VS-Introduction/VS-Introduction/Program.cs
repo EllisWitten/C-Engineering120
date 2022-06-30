@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace CSharpIndroduction;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("I have gained sentience");
+        int x = 100;
+        x += 10;
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine(i);
+            x += 1;
+        }
+    }
+}
