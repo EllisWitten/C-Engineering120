@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieBakingApp", "CookieBakingApp\CookieBakingApp.csproj", "{B59B2BC6-8121-491A-8C08-A02B13DEF2CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieBakingTests", "CookieBakingTests\CookieBakingTests.csproj", "{237FF01E-F3C3-47EA-8396-364F689E82CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B59B2BC6-8121-491A-8C08-A02B13DEF2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59B2BC6-8121-491A-8C08-A02B13DEF2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59B2BC6-8121-491A-8C08-A02B13DEF2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59B2BC6-8121-491A-8C08-A02B13DEF2CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{237FF01E-F3C3-47EA-8396-364F689E82CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{237FF01E-F3C3-47EA-8396-364F689E82CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{237FF01E-F3C3-47EA-8396-364F689E82CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{237FF01E-F3C3-47EA-8396-364F689E82CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88A0731C-467A-4302-987F-43C16E1C05B9}
+	EndGlobalSection
+EndGlobal

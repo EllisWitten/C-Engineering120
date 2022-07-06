@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorsApp", "OperatorsControlFlow\OperatorsApp.csproj", "{2A9FBB1E-251A-47F8-842E-29257AC9F0C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorsAppTests", "OperatorsAppTests\OperatorsAppTests.csproj", "{21D8C98A-7BC0-4913-A368-96EB35FC28E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A9FBB1E-251A-47F8-842E-29257AC9F0C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9FBB1E-251A-47F8-842E-29257AC9F0C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9FBB1E-251A-47F8-842E-29257AC9F0C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9FBB1E-251A-47F8-842E-29257AC9F0C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D8C98A-7BC0-4913-A368-96EB35FC28E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D8C98A-7BC0-4913-A368-96EB35FC28E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D8C98A-7BC0-4913-A368-96EB35FC28E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D8C98A-7BC0-4913-A368-96EB35FC28E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5271BB20-A52B-422F-BAF3-2E34F2585EB7}
+	EndGlobalSection
+EndGlobal
