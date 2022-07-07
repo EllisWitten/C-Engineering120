@@ -6,7 +6,7 @@
         {
             if (nums.Count < 1)
             {
-                throw new ArgumentException($"{nums} is an Invalid List");
+                throw new ArgumentException("Invalid List");
             }
 
             int highest = int.MinValue;
