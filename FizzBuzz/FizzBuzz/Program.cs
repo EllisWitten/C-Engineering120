@@ -14,6 +14,7 @@ public class Program
         {
             return 0;
         }
+        numbers = numbers.Replace("\n", ",");
         string[] arrString = numbers.Split(',');
         int[] arrInt = new int[arrString.Length];
 

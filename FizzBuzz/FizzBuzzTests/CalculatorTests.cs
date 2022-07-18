@@ -17,5 +17,12 @@ public class CalculatorTests
     {
         Assert.That(Program.Add(input), Is.EqualTo(expectedResult));
     }
-    
+
+
+    [TestCase("1\n2,3", 6)]
+
+    public void GivenValuesSeperatedByNewLine_Add_ReturnsExpectedResult(string input, int expectedResult)
+    {
+        Assert.That(Program.Add(input), Is.EqualTo(expectedResult));
+    }
 }
