@@ -10,6 +10,17 @@ public class Program
 
     static public int Add(string numbers)
     {
-        return 0;
+        if(numbers.Length < 1)
+        {
+            return 0;
+        }
+        string[] arrString = numbers.Split(',');
+        int[] arrInt = new int[arrString.Length];
+
+        for(int i = 0; i < arrString.Length; i++)
+        {
+            arrInt[i] = Convert.ToInt32(arrString[i]);
+        }
+        return arrInt.Sum();
     }
 }
