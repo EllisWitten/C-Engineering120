@@ -1,5 +1,5 @@
 ﻿
-namespace FizzBuzzApp;
+namespace CalculatorApp;
 
 public class Program
 {
@@ -8,8 +8,8 @@ public class Program
         
     }
 
-    static public string FizzBuzz(int n)
+    static public int Add(string numbers)
     {
-        return $"{n}";
+        return 0;
     }
 }
