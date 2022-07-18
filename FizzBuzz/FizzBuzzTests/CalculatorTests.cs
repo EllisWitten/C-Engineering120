@@ -10,6 +10,8 @@ public class CalculatorTests
     [TestCase("", 0)]
     [TestCase("1", 1)]
     [TestCase("1,2", 3)]
+    [TestCase("1,2,3", 6)]
+
 
     public void GivenValues_Add_ReturnsExpectedResult(string input,int expectedResult)
     {
