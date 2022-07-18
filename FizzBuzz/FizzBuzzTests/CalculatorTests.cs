@@ -25,4 +25,11 @@ public class CalculatorTests
     {
         Assert.That(Program.Add(input), Is.EqualTo(expectedResult));
     }
+
+    [TestCase("//;\n1;2", 3)]
+
+    public void GivenValuesSeperatedByACustomDelimiter_Add_ReturnsExpectedResult(string input, int expectedResult)
+    {
+        Assert.That(Program.Add(input), Is.EqualTo(expectedResult));
+    }
 }

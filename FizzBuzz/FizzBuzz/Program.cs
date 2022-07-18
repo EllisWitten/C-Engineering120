@@ -14,8 +14,15 @@ public class Program
         {
             return 0;
         }
-        numbers = numbers.Replace("\n", ",");
-        string[] arrString = numbers.Split(',');
+        string delimiter = ",";
+        if (numbers.Length > 3 && numbers.Substring(0,2) == "//")
+        {
+            delimiter = numbers.Substring(2,1);
+            numbers = numbers.Remove(0, 3);
+        }
+
+        numbers = numbers.Replace("\n", delimiter);
+        string[] arrString = numbers.Split(delimiter).Where(x => x.Length > 0).ToArray();
         int[] arrInt = new int[arrString.Length];
 
         for(int i = 0; i < arrString.Length; i++)
