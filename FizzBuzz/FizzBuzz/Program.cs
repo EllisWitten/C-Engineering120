@@ -25,9 +25,19 @@ public class Program
         string[] arrString = numbers.Split(delimiter).Where(x => x.Length > 0).ToArray();
         int[] arrInt = new int[arrString.Length];
 
+        List<int> negative = new List<int>();
         for(int i = 0; i < arrString.Length; i++)
         {
             arrInt[i] = Convert.ToInt32(arrString[i]);
+            if (arrInt[i] < 0)
+            {
+                negative.Add(arrInt[i]);
+            }
+
+        }
+        if(negative.Count > 0)
+        {
+            throw new ArgumentOutOfRangeException($"negatives not allowed : {string.Join(',', negative)}");
         }
         return arrInt.Sum();
     }

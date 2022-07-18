@@ -32,4 +32,16 @@ public class CalculatorTests
     {
         Assert.That(Program.Add(input), Is.EqualTo(expectedResult));
     }
+
+    [TestCase("-1")]
+    public void GivenASingleNegativeString_Add_Throws(string input)
+    {
+        Assert.That(() => Program.Add(input), Throws.TypeOf<ArgumentOutOfRangeException>().And.Message.Contains($"negatives not allowed : {input}"));
+    }
+    [TestCase("-1,-2")]
+
+    public void GivenAStringOfMultipleNegatives_Add_Throws(string input)
+    {
+        Assert.That(() => Program.Add(input), Throws.TypeOf<ArgumentOutOfRangeException>().And.Message.Contains("negatives not allowed : -1,-2"));
+    }
 }
