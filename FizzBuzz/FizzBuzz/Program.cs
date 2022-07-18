@@ -29,6 +29,11 @@ public class Program
         for(int i = 0; i < arrString.Length; i++)
         {
             arrInt[i] = Convert.ToInt32(arrString[i]);
+            if (arrInt[i] > 1000)
+            {
+                arrInt[i] = 0;
+            }
+
             if (arrInt[i] < 0)
             {
                 negative.Add(arrInt[i]);

@@ -44,4 +44,11 @@ public class CalculatorTests
     {
         Assert.That(() => Program.Add(input), Throws.TypeOf<ArgumentOutOfRangeException>().And.Message.Contains("negatives not allowed : -1,-2"));
     }
+
+    [TestCase("1,1001,2", 3)]
+
+    public void GivenAStringContainignNumebrsOver1000_Add_Ignoresnumber(string input, int expectedResult)
+    {
+        Assert.That(Program.Add(input), Is.EqualTo(expectedResult));
+    }
 }
