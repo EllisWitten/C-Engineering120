@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System;
 
 namespace AdvancedNUnit
 {
@@ -12,6 +13,7 @@ namespace AdvancedNUnit
 
         }
 
+        [Category("Happy Path")]
         [Test]
         public void Add_Always_ReturnsExpectedResult()
         {
@@ -77,6 +79,16 @@ namespace AdvancedNUnit
             Assert.That(nums, Has.Exactly(3).InRange(2, 5));
             
         }
+
+        [Category("Sad Path")]
+        [TestCase(5,0)]
+
+        public void GivenNum2As0_CalculaterDivivde_ThrowsError(double inp1, double inp2)
+        {
+            var divisable = new Calculator { Num1 = inp1, Num2 = inp2 };
+            Assert.That(() => divisable.Divide(), Throws.TypeOf<ArgumentException>());
+        }
+
     }
-    
+
 }
